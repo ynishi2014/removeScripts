@@ -7,7 +7,7 @@ Onclick="alert(123)"
 onmousedown="alert(123)"
 ontheedge="hoge"
 >hoge</div>
-<Script>
+<script>
 console.log("hoge");
 </script>
 <script>
