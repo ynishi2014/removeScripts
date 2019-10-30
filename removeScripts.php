@@ -52,6 +52,9 @@ function removeOnAttributes($node){
       if(substr($attribute->name, 0, 2) == "on"){
         $node->removeAttribute($attribute->name);
         $i--;
+      }elseif($attribute->name == "href"){
+        $node->removeAttribute($attribute->name);
+        $i--;
       }
     }
   }
