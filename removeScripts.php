@@ -15,9 +15,9 @@ console.log("hoge");
 </script>
 HTML;
 
-echo removeScriptTag($html);
+echo removeScriptTags($html);
 
-function removeScriptTag($html){
+function removeScriptTags($html){
   $dom = new DOMDocument;
   $dom->loadHTML($html);
 
