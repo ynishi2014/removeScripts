@@ -19,7 +19,7 @@ echo removeScriptTags($html);
 
 function removeScriptTags($html){
   $dom = new DOMDocument;
-  $dom->loadHTML($html);
+  $dom->loadHTML('<?xml encoding="utf-8" ?>' . $html);
 
   //scriptタグを除去
   $tags = $dom->getElementsByTagName('script');
